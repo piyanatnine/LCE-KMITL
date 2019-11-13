@@ -13,13 +13,14 @@
     </script>
 </head>
 <body onload=brython()>
-    <input id="name-box" placeholder="Enter your name">
+    <input id="text-to-lce-box" placeholder="Enter your Text">
     <script type="text/python">
-        from browser import document, alert
-        def greet(event):
-            document["name-box"].value = get_true_typing(document["name-box"].value)
-            document.getElementById("name-box").innerHTML = "Hello JavaScript";
+        from browser import document
+        def lce_th_en(event):
+            """get value to LCE """
+            document["text-to-lce-box"].value = get_true_typing(document["text-to-lce-box"].value)
         def find_cha_standard_keybord(alphabet):
+            """main dict from standard key on thia keybord"""
             line_1_en = ["1","!","2","@","3","#","4","$","5","%","6","^","7","&","8","*","9","(","0",")","-","_","=","+"]
             line_1_th = ["ๅ","+","/","๑","-","๒","ภ","๓","ถ","๔","ุ","ู","ึ","฿","ค","๕","ต","๖","จ","๗","ข","๘","ช","๙"]
             line_2_en = ["q","Q","w","W","e","E","r","R","t","T","y","Y","u","U","i","I","o","O","p","P","[","{","]","}","\\","|"]
@@ -39,12 +40,13 @@
             return alp
 
         def get_true_typing(text):
+            """retur text from dict"""
             total = ""
             for i in text:
                 total += find_cha_standard_keybord(i)
             return total
-        document["greet-button"].bind("click", greet)
+        document["lce-button"].bind("click", lce_th_en)
     </script>
-    <button id="greet-button">LCE</button>
+    <button id="lce-button">LCE</button>
 </body>
 </html>
