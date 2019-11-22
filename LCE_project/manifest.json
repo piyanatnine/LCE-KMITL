@@ -1,17 +1,15 @@
 {
     "manifest_version": 2,
     "name": "LCE-kmitl",
-    "version": "Tester",
-    
-    "default_locale": "en,th",
+    "version": "1.0",
     "description": "change your keyboard Language",
-    "icon": {
-            "16": "De16x16.png",
-            "48": "Deicon48.png",
-            "128": "Deicon128.png"
+    "icons": {
+            "16": "icon/De16x16.png",
+            "48": "icon/De48x48.png",
+            "128": "icon/De128x128.png"
             },
 
-    "permission": [
+    "permissions": [
         "contextMenus"
     ],
     "background":{
