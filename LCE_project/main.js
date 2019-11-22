@@ -1,6 +1,10 @@
-var contextmenuItem = {
-	"id": "Change language",
-	"title": "Change language by De",
-	"contexts": ["selection"]
-};
-chrome.contextMenus.create(contextmenuItem);
+var texter = chrome.contexxtMenus.create({
+                                            title: "Changing",
+                                            contexts: ["selection"],
+                                            onclick: changing
+                                        });
+
+changing = funtion(word){
+    var text = word.selectionText;
+    chrome.pages.
+}
