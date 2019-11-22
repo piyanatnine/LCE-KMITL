@@ -13,5 +13,12 @@
 
     "permission": [
         "contextMenus"
-    ]
+    ],
+    "background":{
+        "scripts": ["main.js"],
+        "persitent": false
+    },
+    "page_action": {
+        "default_popup": "index.html"
+    }
 }
