@@ -33,3 +33,4 @@ function get_true_typing(text_input) {
     }
     return string_out
 }
+
