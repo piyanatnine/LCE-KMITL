@@ -1,7 +1,7 @@
 function getword(info,tab) {
   console.log("Change" + info.selectionText + "Right?");
   var text = get_true_typing(info.selectionText)
-  chrome.pages.create({  
+  chrome.tabs.create({  
     url: "http://www.google.com/search?q=" + text
   });
 }
