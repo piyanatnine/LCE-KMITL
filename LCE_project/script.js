@@ -1,6 +1,11 @@
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('button').addEventListener('click', event_on_cilck);
+  });
+
 function event_on_cilck() {
     document.getElementById('lce-box').value = get_true_typing(document.getElementById('lce-box').value);
 }
+
 
 function dict_th_en(alphabet) {
     var arrey_line_1_en = ["1", "!", "2", "@", "3", "#", "4", "$", "5", "%", "6", "^", "7", "&", "8", "*", "9", "(", "0", ")", "-", "_", "=", "+"];
