@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "LCE-kmitl",
-    "version": "1.0",
+    "version": "1.5",
     "description": "change your keyboard Language",
     "icons": {
             "16": "icon/De16x16.png",
@@ -11,10 +11,10 @@
 
     "permissions": [
         "contextMenus",
-        "tabs"
+        "pages"
     ],
     "background":{
-        "scripts": ["main.js"],
+        "scripts": ["context.js"],
         "persitent": false
     },
     "browser_action": {
