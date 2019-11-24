@@ -1,10 +1,13 @@
-var texter = chrome.contexxtMenus.create({
-                                            title: "Changing",
-                                            contexts: ["selection"],
-                                            onclick: changing
-                                        });
+function getword(info,tab) {
+    console.log("Change" + info.selectionText + "Right?");
+    chrome.tabs.create({  
+      url: "http://www.google.com/search?q=" + info.selectionText
+    });
+  }
 
-changing = funtion(word){
-    var text = word.selectionText;
-    chrome.pages.
-}
+
+chrome.contextMenus.create({
+    title: "LCE-Project", 
+    contexts:["selection"], 
+    onclick: getword
+});
