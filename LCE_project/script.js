@@ -33,7 +33,7 @@ function get_true_typing(text_input) {
             string_out += " "
         }
         else {
-        string_out += dict_th_en(text_input.slice(start, start + 1));
+            string_out += dict_th_en(text_input.slice(start, start + 1));
         }
     }
     return string_out
