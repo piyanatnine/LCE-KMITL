@@ -29,7 +29,12 @@ function dict_th_en(alphabet) {
 function get_true_typing(text_input) {
     var string_out = ""
     for (let start = 0; start < text_input.length; start++) {
-        string_out += dict_th_en(text_input.slice(start, start + 1));
+        if(text_input.slice(start, start + 1) == " "){
+            string_out += " "
+        }
+        else {
+            string_out += dict_th_en(text_input.slice(start, start + 1));
+        }
     }
     return string_out
 }
