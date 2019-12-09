@@ -1,9 +1,8 @@
-function getword(info,tab) {
+function getword(info, _) {
   console.log("Change" + info.selectionText + "Right?");
+  // -> กดปุ่มicon -> นำคำไปแปลงภาษา -> copyลงclipboard 
   var text = get_true_typing(info.selectionText)
-  chrome.tabs.create({  
-    url: "https://www.youtube.com/results?search_query=" + text
-  });
+  document.execCommand('copy', false, null);
 }
 
 function dict_th_en(alphabet) {
@@ -35,6 +34,9 @@ function get_true_typing(text_input) {
 
 chrome.contextMenus.create({
   title: "LCE-Project", 
-  contexts:["selection"], 
-  onclick: getword
+  contexts:["editable"], 
+  //onClicked: getword  <--- ย้ายไปล่าง
 });
+
+chrome.contextMenus.onClicked.addListener(getword);
+//Eventเมื่อกด
