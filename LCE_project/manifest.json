@@ -4,14 +4,14 @@
     "version": "1.5",
     "description": "change your keyboard Language",
     "icons": {
-            "16": "icon/De16x16.png",
-            "48": "icon/De48x48.png",
-            "128": "icon/De128x128.png"
+            "16": "De16x16.png",
+            "48": "De48x48.png",
+            "128": "De128x128.png"
             },
 
     "permissions": [
         "contextMenus",
-        "clipboardWrite"
+        "tabs"
     ],
     "background":{
         "scripts": ["context.js"],
@@ -20,8 +20,8 @@
     "browser_action": {
         "default_popup": "index.html",
         "default_icon": {
-            "16": "icon/De16x16.png",
-            "48": "icon/De48x48.png",
-            "128": "icon/De128x128.png"
+            "16": "De16x16.png",
+            "48": "De48x48.png",
+            "128": "De128x128.png"
         }}
 }
