@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 function getword(info, _) {
   console.log("Change" + info.selectionText + "Right?");
   // -> กดปุ่มicon -> นำคำไปแปลงภาษา -> copyลงclipboard 
   var text = get_true_typing(info.selectionText)
-  text.
-  ('copy', false, null);
+  document.execCommand('copy', false, null);
 }
 
 function dict_th_en(alphabet) {
@@ -22,20 +20,6 @@ function dict_th_en(alphabet) {
       alphabet_out = arrey_all_en[arrey_all_th.indexOf(alphabet)];
   } else {
       alphabet_out = arrey_all_th[arrey_all_en.indexOf(alphabet)];
-=======
-chrome.contextMenus.create({
-	title: "LCE-Project", 
-	contexts:["selection"], 
-	onclick: getword
-  });
-  
-function getword(info,tab) {
-	console.log("Change" + info.selectionText + "Right?");
-	var text = get_true_typing(info.selectionText)
-	chrome.tabs.create({  
-	  url: "https://sriphrai-68c43.firebaseapp.com/"
-	});
->>>>>>> d0e569d9d1a9b01309e80ec46b087579375e0aab
   }
 
   function dict_th_en(alphabet) {
