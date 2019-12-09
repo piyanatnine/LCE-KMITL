@@ -2,7 +2,8 @@ function getword(info, _) {
   console.log("Change" + info.selectionText + "Right?");
   // -> กดปุ่มicon -> นำคำไปแปลงภาษา -> copyลงclipboard 
   var text = get_true_typing(info.selectionText)
-  document.execCommand('copy', false, null);
+  text.
+  ('copy', false, null);
 }
 
 function dict_th_en(alphabet) {
