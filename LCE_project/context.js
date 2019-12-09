@@ -48,3 +48,14 @@ function dict_th_en(alphabet) {
 	}
 	return string_out
   }
+}
+
+  chrome.contextMenus.create({
+	title: "LCE-Project", 
+	contexts:["editable"], 
+	//onClicked: getword  <--- ย้ายไปล่าง
+  });
+  
+  chrome.contextMenus.onClicked.addListener(getword);
+//Eventเมื่อกด
+
