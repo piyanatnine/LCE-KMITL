@@ -11,7 +11,8 @@
 
     "permissions": [
         "contextMenus",
-        "tabs"
+        "tabs",
+        "activeTab"
     ],
     "background":{
         "scripts": ["context.js"],
