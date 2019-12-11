@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 function getword(info) {
   console.log("Change" + info.selectionText + "Right?");
   // -> กดปุ่มicon -> นำคำไปแปลงภาษา -> copyลงclipboard 
   var text = get_true_typing(info.selectionText);
   textToClipboard(text);
 }
+
 function textToClipboard(text){
   var dummy = document.createElement("textarea");
   document.body.appendChild(dummy);
@@ -52,7 +52,6 @@ function dict_th_en(alphabet) {
   // chrome.contextMenus.onClicked.addListener(getword);
 //Eventเมื่อกด
   chrome.contextMenus.onClicked.addListener(getword);
-=======
 chrome.contextMenus.create({
 	title: "LCE-Project", 
 	contexts:["selection"], 
@@ -94,4 +93,3 @@ function getword(info,tab) {
 	}
 	return string_out
   }
->>>>>>> d46a39256b0a084e3ed6c9c5c90cc4c3ae23fdb5
