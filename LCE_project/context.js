@@ -1,11 +1,16 @@
 function getword(info) {
   console.log("Change" + info.selectionText + "Right?");
   // -> กดปุ่มicon -> นำคำไปแปลงภาษา -> copyลงclipboard 
-  var text = get_true_typing(info.selectionText)
-  // chrome.tabs.sendMessage(text, function(response) {console.log(response);});
-  chrome.runtime.sendMessage({  
-    url: "http://www.google.com/search?q=" + text
-  });
+  var text = get_true_typing(info.selectionText);
+  textToClipboard(text);
+}
+function textToClipboard(text){
+  var dummy = document.createElement("textarea");
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
 }
 
 function dict_th_en(alphabet) {
