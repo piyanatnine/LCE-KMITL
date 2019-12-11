@@ -14,6 +14,16 @@
         "tabs",
         "activeTab"
     ],
+    "commands": {
+        "_execute_browser_action": {
+          "suggested_key": {
+            "windows": "Alt+C",
+            "mac": "Alt+C",
+            "chromeos": "Alt+C",
+            "linux": "Alt+C"
+          }
+        }
+    },
     "background":{
         "scripts": ["context.js"],
         "persitent": false
