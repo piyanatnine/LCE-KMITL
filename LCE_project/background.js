@@ -2,9 +2,21 @@
 function getword(info) {// get string form user selection
     console.log("Change" + info.selectionText + "Right?");
     var text = get_true_typing(info.selectionText);
+    var alertWindow;
     textToClipboard(text);
     chrome.browserAction.setTitle({title:"Plese Ctrl+V"});
-  }
+    alertWindow = window.open("", "alertWindow", "width=200,height=100")
+    alertWindow.document.write("<p>Ctrl+V</p>")
+    setTimeout(function(){alertWindow.close()}, 3000)
+}
+var window
+function openWin() {
+    myWindow = window.open("alert_context.html", "_blank", "width=500, height=50");
+}
+  
+function closeWin() {
+    myWindow.close();
+}
   
 function textToClipboard(text){ // put string to cilpboard
     var copy_text = document.createElement("textarea");
