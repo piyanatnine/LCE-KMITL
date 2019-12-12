@@ -14,7 +14,7 @@
             transition-duration: 0.4s;
             font-weight: 500;
             text-align: center;
-            margin-left: 15px;
+            margin-left: 30px;
             margin-top: 5px;
         }
         #summit:hover {
@@ -22,9 +22,12 @@
             color: whitesmoke;
         }
 
-        #v-1 {
-            border-radius: 40px;
-            margin-top: 5px;
+        #info {
+            border: 1px;
+            margin-top: 10px;
+        }
+        #infopage {
+            display: none;
         }
     </style>
 </head>
@@ -38,10 +41,16 @@
                 </div>
             </div>
             <div class="low">
-                <button type="button" id="v-1">info</button>
+                <img id="info" src="icon/info.png" width="15" height="15"></img>
                 <button type="button" id="summit">SUBMIT</button>
             </div>
         </div>
+    </div>
+    <div id = "infopage">
+        วิธีใช้งาน<br>
+        1.เลือกคำที่พิมผิด<br>
+        2.คลิ้กขวาแล้วกดที่ไอคอนโปรแกรม<br>
+        3.กดCtrl+Vเพื่อวางข้อความ
     </div>
 </body>
 
