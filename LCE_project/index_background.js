@@ -37,6 +37,7 @@ function get_true_typing(text_input) { //input string and return converted strin
     return string_out
 }
 
+//how to use and other infomation
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("info").addEventListener('mouseover', infomation);
     document.getElementById("info").addEventListener('mouseout', closeinfo);
