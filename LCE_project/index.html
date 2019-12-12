@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LCE</title>
     <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <title>LCE</title>
+    <style>
+        #botton {
+            color: white;
+            background-color: #0096ff;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            font-weight: 500;
+        }
+        #botton:hover {
+            background-color: #016ab4;
+            color: whitesmoke;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <br>
+            <div class="low">
+                <div class="form-group" >
                     <input id="lce-box" placeholder="Enter your message">
                 </div>
             </div>
-            <div class="col-md-12">
-                <center><button type="button" class="btn btn-outline-primary btn-sm">submit</button></center>
+            <div class="low">
+                <center><button type="button" id="botton">SUBMIT</button></center>
             </div>
         </div>
     </div>
