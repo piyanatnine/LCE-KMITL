@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('button').addEventListener('click', event_on_cilck);
+    document.getElementById("summit").addEventListener('click', event_on_cilck);
   });
 function event_on_cilck() {
     document.getElementById('lce-box').value = get_true_typing(document.getElementById('lce-box').value);
