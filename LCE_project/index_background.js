@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("summit").addEventListener('click', event_on_cilck);
+    chrome.browserAction.setTitle({title:"Select text and click RMB"});
   });
 function event_on_cilck() {
     document.getElementById('lce-box').value = get_true_typing(document.getElementById('lce-box').value);
