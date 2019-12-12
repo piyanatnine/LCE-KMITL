@@ -1,13 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('button').addEventListener('click', event_on_cilck);
   });
-
 function event_on_cilck() {
     document.getElementById('lce-box').value = get_true_typing(document.getElementById('lce-box').value);
 }
-
-
-function dict_th_en(alphabet) {
+function dict_th_en(alphabet) { // get a sting return converted string  (convert en-th from keybord)
     var arrey_line_1_en = ["1", "!", "2", "@", "3", "#", "4", "$", "5", "%", "6", "^", "7", "&", "8", "*", "9", "(", "0", ")", "-", "_", "=", "+"];
     var arrey_line_1_th = ["ๅ", "+", "/", "๑", "-", "๒", "ภ", "๓", "ถ", "๔", "ุ", "ู", "ึ", "฿", "ค", "๕", "ต", "๖", "จ", "๗", "ข", "๘", "ช", "๙"];
     var arrey_line_2_en = ["q", "Q", "w", "W", "e", "E", "r", "R", "t", "T", "y", "Y", "u", "U", "i", "I", "o", "O", "p", "P", "[", "{", "]", "}", "\\", "|"];
@@ -26,7 +23,7 @@ function dict_th_en(alphabet) {
     return alphabet_out
 }
 
-function get_true_typing(text_input) {
+function get_true_typing(text_input) { //input string and return converted string 
     var string_out = ""
     for (let start = 0; start < text_input.length; start++) {
         if(text_input.slice(start, start + 1) == " "){
@@ -38,4 +35,3 @@ function get_true_typing(text_input) {
     }
     return string_out
 }
-
