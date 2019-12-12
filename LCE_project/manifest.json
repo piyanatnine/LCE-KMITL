@@ -14,22 +14,13 @@
         "tabs",
         "activeTab"
     ],
-    "commands": {
-        "_execute_browser_action": {
-          "suggested_key": {
-            "windows": "Alt+C",
-            "mac": "Alt+C",
-            "chromeos": "Alt+C",
-            "linux": "Alt+C"
-          }
-        }
-    },
     "background":{
-        "scripts": ["context.js"],
+        "scripts": ["background.js"],
         "persitent": false
     },
     "browser_action": {
         "default_popup": "index.html",
+        "default_title": "Select text and click RMB",
         "default_icon": {
             "16": "icon/De16x16.png",
             "48": "icon/De48x48.png",
