@@ -52,6 +52,5 @@ chrome.contextMenus.create({
 	contexts:["editable"], 
 	//onClicked: getword  <--- ย้ายไปล่าง
   });
-  // chrome.contextMenus.onClicked.addListener(getword);
 //Eventเมื่อกด
 chrome.contextMenus.onClicked.addListener(getword);
