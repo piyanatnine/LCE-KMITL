@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "LCE-kmitl",
-    "version": "1.5",
+    "version": "1.9",
     "description": "change your keyboard Language",
     "icons": {
             "16": "icon/De16x16.png",
@@ -11,19 +11,9 @@
 
     "permissions": [
         "contextMenus",
-        "tabs",
-        "activeTab"
+        "tabs"
     ],
-    "commands": {
-        "_execute_browser_action": {
-          "suggested_key": {
-            "windows": "Alt+C",
-            "mac": "Alt+C",
-            "chromeos": "Alt+C",
-            "linux": "Alt+C"
-          }
-        }
-    },
+
     "background":{
         "scripts": ["context.js"],
         "persitent": false
