@@ -35,3 +35,16 @@ function get_true_typing(text_input) { //input string and return converted strin
     }
     return string_out
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("info").addEventListener('mouseover', infomation);
+    document.getElementById("info").addEventListener('mouseout', closeinfo);
+});
+
+function infomation() {
+    document.getElementById("infopage").style.display = "block"
+}
+
+function closeinfo() {
+    document.getElementById("infopage").style.display = "none"
+}
