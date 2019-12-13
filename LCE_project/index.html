@@ -6,32 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="index_background.js"></script>
     <title>LCE</title>
-    <style>
-        body {
-            background-image: url(icon/bg-app.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        #summit {
-            color: white;
-            background-color: #0096ff;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            font-weight: 500;
-            text-align: center;
-            margin-left: 30px;
-            margin-top: 5px;
-        }
-        #summit:hover {
-            background-color: #016ab4;
-            color: whitesmoke;
-        }
-        #info {
-            border: 1px;
-            margin-top: 10px;
-        }
-        #infopage {display: none;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -39,7 +14,7 @@
         <div class="row">
             <div class="low">
                 <div class="form-group" >
-                    <input id="lce-box" placeholder ="Enter your text to convert">
+                    <input type="text" id="lce-box" placeholder ="Enter your text to convert">
                 </div>
             </div>
             <div class="low">
@@ -51,7 +26,7 @@
     <div id = "infopage">
         วิธีใช้งาน<br>
         1.เลือกคำที่พิมผิด<br>
-        2.คลิ้กขวาแล้วกดที่ไอคอนโปรแกรม<br>
+        2.คลิ้กขวาแล้วกดที่icon-LCE<br>
         3.กดCtrl+Vเพื่อวางข้อความ
     </div>
 </body>
