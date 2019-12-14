@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("summit").addEventListener('click', event_on_cilck);
-<<<<<<< HEAD
-=======
-    chrome.browserAction.setTitle({title:"Language Change Expension"});
->>>>>>> ea7354b6c50b2af53c1a4416da9ae1bb112d5908
   });
 function event_on_cilck() {
     document.getElementById('lce-box').value = get_true_typing(document.getElementById('lce-box').value);
