@@ -36,9 +36,21 @@ function dict_th_en(alphabet) { // get a sting return converted string  (convert
 
 function get_true_typing(text_input) { //input string and return converted string 
     var string_out = ""
+    var arrey_problem_1_en = ["-", "/"]
+    var arrey_problem_1_th = ["ข", "ฝ"]
     for (let start = 0; start < text_input.length; start++) {
+       
         if(text_input.slice(start, start + 1) == " "){
             string_out += " "
+        }
+        if(text_input.charCodeAt(start) == 44){
+            string_out += "ม"
+        }
+        else if(arrey_problem_1_en.includes(text_input.slice(start, start + 1))){
+            string_out += arrey_problem_1_th[arrey_problem_1_en.indexOf(text_input.slice(start, start + 1))]
+        }
+        else if(arrey_problem_1_th.includes(text_input.slice(start, start + 1))){
+            string_out += arrey_problem_1_en[arrey_problem_1_th.indexOf(text_input.slice(start, start + 1))]
         }
         else {
             string_out += dict_th_en(text_input.slice(start, start + 1));
