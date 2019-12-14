@@ -60,7 +60,7 @@ function get_true_typing(text_input) { //input string and return converted strin
 }
 chrome.contextMenus.create({
 	title: "LCE-Project", 
-	contexts:["editable"], 
+	contexts:["selection"], 
 	//onClicked: getword  <--- ย้ายไปล่าง
   });
 //Eventเมื่อกด

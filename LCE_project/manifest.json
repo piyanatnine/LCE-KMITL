@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "LCE-kmitl",
-    "version": "2.0",
+    "name": "LCE-Languge Change Expension",
+    "version": "2.0.1",
     "description": "change your keyboard Language",
     "icons": {
             "16": "icon/De16x16.png",
@@ -19,7 +19,6 @@
     },
     "browser_action": {
         "default_popup": "index.html",
-        "default_title": "Select text and click RMB",
         "default_icon": {
             "16": "icon/De16x16.png",
             "48": "icon/De48x48.png",
