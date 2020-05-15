@@ -1,35 +1,76 @@
 <svg viewBox="0 0 1200 800">
   <!--path fill="hsl(62, 43%, 80%)" d="M0 520 L790 300 L1400 500 L580 800 Z"/-->
-  <!--1st-->
-  <path fill="#f2e5d5" d="M200 400 L720 250 L980 340 L450 520 Z"/>
-  <path fill="#fff2df" d="M200 500 L200 400 L450 520 L450 625 Z"/>
-  <path fill="#fff2df" d="M980 440 L980 340 L450 520 L450 625 Z"/>
-  <!--2nd-->
-  <path fill="#f2e5d5" d="M270 345 L720 220 L930 300 L480 440 Z"/>
-  <path fill="#fff2df" d="M270 390 L270 345 L480 440 L480 490 Z"/>
-  <path fill="#fff2df" d="M930 340 L930 300 L480 440 L480 490 Z"/>
-  <!--3rd-->
-  <path fill="#569c91" d="M360 310 L700 200 L850 250 L480 360 Z"/>
-  <path fill="#80c2b8" d="M330 340 L360 310 L480 360 L480 410 Z"/>
-  <path fill="#80c2b8" d="M870 288 L850 250 L480 360 L480 410 Z"/>
-  <!--4th-->
-  <path fill="#80c2b8" d="M480 280 L520 250 L570 270 L575 325 Z"/>
-  <path fill="#80c2b8" d="M575 325 L570 270 L690 235 L760 270 Z"/>
-  <path fill="#569c91" d="M520 250 L570 270 L690 235 L640 215 Z"/>
-  <!--center-->
-  <path fill="gray" d="M730 540 L730 70 L820 70 L820 540 Z"/>
-  <path fill="#447aab" d="M730 70 L820 70 L820 60 L740 60"/>
-  <path fill="#f9537f" d="M755 70 L755 25 L795 25 L795 70"/>
-    <!--wall-->
-  <path fill="green" d="M650 610 L650 540 L590 510 L590 575"/>
-  <path fill="ffffff" d="M695 525 L650 540 L590 510 L630 495"/>
-  <path fill="blue" d="M650 610 L650 540 L930 540 L930 615"/>
-  <path fill="#009966" d="M695 525 L650 540 L890 540 L920 520"/>
-  <path fill="yellow" d="M980 550 L980 490 L870 425 L870 475"/>
-  <path fill="#FFD700" d="M1020 480 L980 480 L890 540 L930 540"/>
-  <path fill="red" d="M1020 545 L1020 480 L930 540 L930 615"/>
-  <path fill="blue" d="M1020 480 L980 490 L870 425 L910 410"/>
+  <!--wallpaper-->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a89c90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0b4a6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#56c5d6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8fdfdc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <rect width="1200" height="360" fill="url(#grad2)" x="0" y="0"/>
+<!--- cloud --->
+  <ellipse cx="300" cy="360" rx="250" ry="150" fill="#fff">
+         <animate attributeName="cx" values="305;290;305" dur="1.5s" repeatCount="indefinite" />
+   </ellipse>
+   <ellipse cx="300" cy="250" rx="150" ry="80" fill="#fff">
+         <animate attributeName="cx" values="305;290;305" dur="1.5s" repeatCount="indefinite" />
+   </ellipse>
+  <ellipse cx="0" cy="360" rx="100" ry="80" fill="#fff">
+         <animate attributeName="cx" values="10;0;10" dur="1.5s" repeatCount="indefinite" />
+   </ellipse>
+
+    <rect id="ground" width="1200" height="440" fill="url(#grad1)" x="0" y="360"/>
+  <!--1st-->
+  <path stroke="black" fill="#f2e5d5" d="M200 400 L720 250 L980 340 L450 520 Z"/>
+  <path stroke="black" fill="#fff2df" d="M200 500 L200 400 L450 520 L450 625 Z"/>
+  <path stroke="black" fill="#fff2df" d="M980 440 L980 340 L450 520 L450 625 Z"/>
+  <!--2nd-->
+  <path stroke="black" fill="#f2e5d5" d="M270 345 L720 220 L930 300 L480 440 Z"/>
+  <path stroke="black" fill="#fff2df" d="M270 390 L270 345 L480 440 L480 490 Z"/>
+  <path stroke="black" fill="#fff2df" d="M930 340 L930 300 L480 440 L480 490 Z"/>
+  <!--3rd-->
+  <path stroke="black" fill="#569c91" d="M360 310 L700 200 L850 250 L480 360 Z"/>
+  <path stroke="black" fill="#80c2b8" d="M330 340 L360 310 L480 360 L480 410 Z"/>
+  <path stroke="black" fill="#80c2b8" d="M870 288 L850 250 L480 360 L480 410 Z"/>
+  <!--4th-->
+  <path stroke="black" fill="#80c2b8" d="M480 280 L520 250 L570 270 L575 325 Z"/>
+  <path stroke="black" fill="#80c2b8" d="M575 325 L570 270 L690 235 L760 270 Z"/>
+  <path stroke="black" fill="#569c91" d="M520 250 L570 270 L690 235 L640 215 Z"/>
+  <!--center not center-->
+  <path stroke="black" fill="#fff2df" d="M780 515 L780 90 L860 90 L860 515 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M780 90 L860 90 L860 80 L786 80 Z"/>
+  <path stroke="black" fill="#fff2df" d="M800 90 L800 40 L840 40 L840 90 Z"/>
+
+  <!--wall-->
+  <path stroke="black" fill="#fff2df" d="M650 610 L650 540 L590 510 L590 575 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M695 525 L650 540 L590 510 L630 495 Z"/>
+  <path stroke="black" fill="#fff2df" d="M650 610 L650 540 L930 540 L930 615 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M695 525 L650 540 L930 540 L910 525 Z"/>
+  <path stroke="black" fill="#f2e4d4" d="M1000 520 L1000 460 L930 540 L930 615 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M930 540 L910 525 L970 460 L1000 460 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M933 500 L970 460 L870 425 L870 478 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M1000 440 L970 460 L870 425 L910 410 Z"/>
+  <path stroke="black" fill="#eddbc4" d="M1000 440 L1000 460 L970 460 Z"/>
+  <!--center detail body-->
+  <rect fill="red" width="10" height="290" x="785" y="220"/>
+  <rect fill="yellow" width="10" height="290" x="845" y="220"/>
+  <rect fill="green" width="40" height="270" x="800" y="240"/>
+  <!--center detail before head-->
+  <path fill="black" d="M785 160 L800 160 L785 190"/>
+  <path fill="black" d="M845 240 L800 240 L "/>
+
+  <!--Balloon-->
+  <circle r="50" cx="150" cy="100" fill="crimson"/>
+  <path d="M150 160 L160 180 L150 200 L160 220 L150 240 L160 260" fill="none" stroke-width="1" stroke="brown" />
+  <path d="M150 150 L140 160 L160 160" fill="crimson"/>
 
 
 </svg>
